@@ -25,13 +25,13 @@ export const config = {
       // 想要发送的人的名字
       name: "老婆0",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "oIjGO5xU66sA_NTRNAlK99NgqfzY",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "",
+      useTemplateId: "xF_Zw1EE491S-VnYUIrqNwVMOVzmPRCtI_JyVgflm4Y",
       // 所在省份
-      province: "广东",
+      province: "北京",
       // 所在城市
-      city: "肇庆",
+      city: "北京",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '12-27',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
@@ -41,58 +41,21 @@ export const config = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
-        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+        {"type": "*生日", "name": "老婆", "year": "1992", "date": "08-20"},
+        {"type": "节日", "name": "结婚纪念日", "year": "2017", "date": "09-27"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        {"type": "生日", "name": "老婆", "year": "1992", "date": "09-16"},
+        {"type": "节日", "name": "被搭讪纪念日", "year": "2011", "date": "12-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        {"keyword": "love_day", date: "2022-09-08"},
+        {"keyword": "love_day", date: "2011-12-20"},
         // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+        {"keyword": "marry_day", date: "2017-09-27"},
+        
       ]
-    },
-    {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆3",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
+    }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -102,7 +65,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "",
+  CALLBACK_TEMPLATE_ID: "HAqnpDcxsJx7GE1CB2y5imzc8Njvo2cCjuGW2HJ5wZc",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -110,7 +73,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "oIjGO5xU66sA_NTRNAlK99NgqfzY",
     },
     // 你可以不断按格式往下增加
     // ...
@@ -123,9 +86,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
+  PROVINCE: "北京",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  CITY: "北京",
 
   /** 重要节日相关 */
 
@@ -148,11 +111,11 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+    {"type": "*生日", "name": "老婆", "year": "1992", "date": "08-20", isShowAge: true},
+    {"type": "节日", "name": "结婚纪念日", "year": "2017", "date": "09-27"},
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    {"type": "生日", "name": "媳妇", "year": "1992", "date": "09-16", isShowAge: true},
+    {"type": "节日", "name": "被搭讪纪念日", "year": "2011", "date": "12-01"},
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -172,11 +135,10 @@ export const config = {
     * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    {"keyword": "love_day", date: "2022-09-08"},
+    {"keyword": "love_day", date: "2011-12-20"},
     // 结婚纪念日
-    {"keyword": "marry_day", date: "2022-09-09"},
-    // 退伍日
-    {"keyword": "ex_day", date: "2022-09-10"},
+    {"keyword": "marry_day", date: "2017-09-27"},
+    
     // 你可以不断按格式往下增加
     // ...
   ],
